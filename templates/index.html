@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Website Detector</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            width: 400px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #0072ff;
+            background-color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0072ff;
+            color: #fff;
+        }
+
+        .note {
+            font-size: 14px;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Phishing Website Detector</h1>
+        <form method="POST" action="/predict">
+            <input type="text" name="url" placeholder="Enter a website URL" required>
+            <br>
+            <input type="submit" value="Check Website">
+        </form>
+        <p class="note">Example: https://secure-bank.com/login</p>
+    </div>
+</body>
+</html>
