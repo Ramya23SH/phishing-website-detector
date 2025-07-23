@@ -48,6 +48,12 @@ pandas
 scikit-learn
 joblib
 ```
+
+## 📂 Dataset
+
+The model was trained using a public phishing URL dataset from [Kaggle](https://www.kaggle.com/). All rights belong to the original authors.
+
+
  License
 
 This project is for academic/demo purposes only.
